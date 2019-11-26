@@ -1,0 +1,99 @@
+<view>
+  <scroll-view style="height:100vh;" scroll-y onScrollToLower="onScrollToLower">
+    <!-- 
+      loadMore：显示加载更多item
+        load：显示加载更多
+        over：显示加载完成无更多
+      loadContent:结合loadMore属性使用，用于文案展示
+     -->
+    <list>
+      <!-- 列表头部 -->
+      <view slot="header">
+        原生组件
+      </view>
+      <block a:for="{{nativeComponents}}">
+        <!-- 
+          thumb:缩略图地址
+          arrow：是否带箭头,默认为false
+          align:子元素垂直对齐，可选：top,middle，bottom
+          index：列表项的唯一索引,
+          last:是否是列表的最后一项
+          disabled:不可点击
+          multipleLine：多行 // 没看到用处
+          wrap：是否换行，默认文字超长后会隐藏，默认false是隐藏超出的部分,true则不隐藏
+         -->
+        <list-item
+        
+          thumb="{{item.thumb}}" 
+          arrow="{{item.arrow}}"
+          align="{{item.align}}"
+          index="{{index}}"
+          onClick="onNativeClick"
+          key="items-{{index}}"
+          last="{{index === (item.length-1)}}"
+          multipleLine="{{item.multipleLine}}"
+          wrap="{{item.wrap}}"
+        >
+          {{item.title}}
+          <view class="am-list-brief">{{item.brief}}</view>
+          <!-- extra：用于渲染列表项右边说明 -->
+					<view a:if="{{item.extra}}" slot="extra">
+						{{item.extra}}
+					</view>
+          <!-- prefix：用于渲染列表项左侧说明 -->
+          <view a:if="{{item.prefix}}" slot="prefix">
+						{{item.prefix}}
+					</view>
+        </list-item>
+      </block>
+      <!-- <view slot="footer">
+				列表尾部
+			</view> -->
+    </list>
+
+    <list>
+      <!-- 列表头部 -->
+      <view slot="header">
+        扩展组件
+      </view>
+      <block a:for="{{extraComponents}}">
+        <!-- 
+          thumb:缩略图地址
+          arrow：是否带箭头,默认为false
+          align:子元素垂直对齐，可选：top,middle，bottom
+          index：列表项的唯一索引,
+          last:是否是列表的最后一项
+          disabled:不可点击
+          multipleLine：多行 // 没看到用处
+          wrap：是否换行，默认文字超长后会隐藏，默认false是隐藏超出的部分,true则不隐藏
+         -->
+        <list-item
+          thumb="{{item.thumb}}" 
+          arrow="{{item.arrow}}"
+          align="{{item.align}}"
+          index="{{index}}"
+          onClick="onExtraClick"
+          key="items-{{index}}"
+          last="{{index === (item.length-1)}}"
+          multipleLine="{{item.multipleLine}}"
+          wrap="{{item.wrap}}"
+        >
+          {{item.title}}
+          <view class="am-list-brief">{{item.brief}}</view>
+          <!-- extra：用于渲染列表项右边说明 -->
+					<view a:if="{{item.extra}}" slot="extra">
+						{{item.extra}}
+					</view>
+          <!-- prefix：用于渲染列表项左侧说明 -->
+          <view a:if="{{item.prefix}}" slot="prefix">
+						{{item.prefix}}
+					</view>
+        </list-item>
+      </block>
+      <!-- <view slot="footer">
+				列表尾部
+			</view> -->
+    </list>
+   
+  </scroll-view>
+</view>

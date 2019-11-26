@@ -1,0 +1,41 @@
+<view class="page">
+  <view class="page-description">图标</view>
+  <view class="page-section">
+    <view class="page-section-title">Type：只支持如下几种类型</view>
+    <view class="page-section-demo icon-list">
+      <block a:for="{{iconType}}">
+        <view class="item">
+          <!-- icon目前只支持设置的这几种类型 -->
+          <icon type="{{item}}" aria-label="{{item}}" size="45"/>
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">Size：设置icon的大小</view>
+    <view class="page-section-demo icon-list">
+      <block a:for="{{iconSize}}">
+        <view class="item">
+          <icon type="success" size="{{item}}"/>
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">Color：设置图标颜色</view>
+    <view class="page-section-demo icon-list">
+      <block a:for="{{iconColor}}">
+        <view class="item">
+          <icon type="success" size="45" color="{{item}}"/>
+          <text style="color:{{item}}">{{item}}</text>
+        </view>
+      </block>
+      <!-- 使用style修改icon的color并不起效果 -->
+      <icon type="success" size="45" style="color:black;"/>
+    </view>
+  </view>
+</view>

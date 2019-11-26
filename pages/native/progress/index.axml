@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="page-description">进度条</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <!-- percent：百分比 -->
+      <!-- show-info：在右侧显示百分比值，默认为false不显示 -->
+      <progress percent="20" show-info/>
+      <!-- stroke-width：线的粗细，默认为6，单位为px -->
+      <progress percent="40" stroke-width="10"/>
+      <!-- active：是否显示动画效果，默认为false -->
+      <progress percent="60" active/>
+      <!-- activeColor：已经选择的进度条颜色，backgroundColor：未选择的进度条颜色 -->
+      <progress percent="80" activeColor="#6abf47" backgroundColor="#f4333c" />
+      <!-- 动态 -->
+      <progress show-info="{{true}}" percent="{{precent}}"></progress>
+    </view>
+  </view>
+</view>

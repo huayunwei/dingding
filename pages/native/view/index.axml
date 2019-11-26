@@ -1,0 +1,14 @@
+<view>
+  <!-- 点击时添加的样式类 -->
+  <view hover-class="view-hover" style="padding:30rpx;">点击我会改变样式！</view>
+  <!-- 按住多久后会显示点击状态，单位毫秒 --> 
+  <view hover-class="view-hover" hover-start-time="10000" style="padding:30rpx;">需要点击我10s我才会改变样式</view>
+  <!-- 按住后保持多久的点击状态，单位毫秒 -->
+  <view hover-stay-time="10000" hover-class="view-hover" style="padding:30rpx;">点击后松开我我的样式也会保持10s</view>
+  <!-- onTap操作 -->
+  <view onTap="tap" class="view-class">onTap</view>
+  <!-- 触摸操作 点击时为start，抬起时为end，点击时移动为move-->
+  <view onTouchStart="start" onTouchMove="move" onTouchEnd="end" onTouchCancel="cancel" class="view-class">tap操作</view>
+  <!-- 长按 -->
+  <view onLongTap="long" class="view-class">long tap</view>
+</view>

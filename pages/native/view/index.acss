@@ -1,0 +1,7 @@
+.view-hover{
+  color: red;
+}
+
+.view-class{
+  padding:30rpx;
+}

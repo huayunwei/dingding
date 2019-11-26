@@ -1,0 +1,11 @@
+.navigator-hover{
+  color:  blue;
+}
+
+.other-navigator-hover{
+  color: pink;
+}
+
+navigator{
+  margin: 50rpx;
+}

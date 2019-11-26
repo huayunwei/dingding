@@ -1,0 +1,2 @@
+<!-- 依旧是打开一个新的页面，虽然可以返回到之前的页面当中 -->
+<navigator url="/pages/native/navigator/index" hover-class="navigator-back">打开一个新的页面来返回</navigator>

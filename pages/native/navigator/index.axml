@@ -1,0 +1,8 @@
+<view class="btn-area">
+  <!-- hover-class：点击时附加的类，类似于之前的view，默认open-type为navigate：跳转到新页面-->
+  <navigator url="/pages/native/navigator?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+  <!-- open-type：redirect 在当前页面打开-->
+  <navigator url="/pages/api/index" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+  <!-- open-type：switchTab 切换tab,需要url存在于app.json的tabBar -->
+  <navigator url="/pages/api/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+</view>

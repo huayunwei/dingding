@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/api/index",
+    "pages/native/scroll/index",
+    "pages/native/swiper/index",
+    "pages/native/view/index",
+    "pages/native/form/index",
+    "pages/native/h5/index",
+    "pages/native/icon/index",
+    "pages/native/image/index",
+    "pages/native/progress/index",
+    "pages/native/text/index",
+    "pages/native/navigator/index",
+    "pages/native/navigator"
+  ],
+  "window": {
+    "defaultTitle": "钉钉 demo"
+  },
+  "tabBar": {
+    "textColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "UI demo"
+      },
+      {
+        "pagePath": "pages/api/index",
+        "name": "Api demo"
+      },
+      {
+        "pagePath": "",
+        "name": "f2 demo"
+      }
+    ]
+  }
+}

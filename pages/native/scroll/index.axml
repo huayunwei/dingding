@@ -1,0 +1,48 @@
+<view class="page">
+  <view class="page-description">可滚动视图区域</view>
+  <view class="page-section">
+    <view class="page-section-title">纵向滚动</view>
+    <view class="page-section-title">竖向滚动条位置（0为顶部，scroll-top参数）</view>
+    <view class="page-section-title">{{scrollTop}}</view>
+    <view class="page-section-title">当前展示的页面为（scroll-into-view参数）: {{toView}}</view>
+    <view class="page-section-demo">
+      <!-- 需要指定高度 scroll-with-animation：有bug-->
+      <scroll-view 
+          scroll-y="{{true}}" 
+          style="height: 200px;"  
+          onScrollToUpper="upper" 
+          onScrollToLower="lower" 
+          onScroll="scroll" 
+          scroll-into-view="{{toView}}" 
+          scroll-top="{{scrollTop}}"
+          
+      >
+        <view a:for="{{order}}">
+          <view id={{item}} class="scroll-view-item bc_{{item}}">
+            <text style="font-size:50rpx;">我是第{{index}}个</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="page-section-btns">
+      <!-- 修改scroll-into-view参数 -->
+      <view onTap="tap">next</view>
+      <!-- 修改scroll-top参数 -->
+      <view onTap="tapMove">move</view>
+      <!-- 将scroll-top参数设置为0 -->
+      <view onTap="scrollToTop">scrollToTop</view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">横向滚动</view>
+    <view class="page-section-demo">
+      <scroll-view class="scroll-view_H" scroll-x="{{true}}" style="width: 100%" >
+        <view id="blue2" class="scroll-view-item_H bc_blue"></view>
+        <view id="red2"  class="scroll-view-item_H bc_red"></view>
+        <view id="yellow2" class="scroll-view-item_H bc_yellow"></view>
+        <view id="green2" class="scroll-view-item_H bc_green"></view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

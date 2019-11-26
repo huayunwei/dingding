@@ -1,0 +1,9 @@
+<view>
+  <!-- text默认是非块状元素，即不会单独占据一行 -->
+  <text style="font-size=30rpx;display:block;margin-bottom:50rpx;">我是一段文字，不可被选择</text>
+
+  <text selectable="true" style="font-size=30rpx;display:block;;margin-bottom:50rpx;">我是一段可以被选择的文字</text>
+
+  <!-- 使用\n可以对text进行分行处理-->
+  <text selectable="true" style="font-size=30rpx;display:block;">我是一段被\n分行了的文字</text>
+</view>
