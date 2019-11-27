@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="page-description">分享</view>
+  <!-- onSubmit： -->
+  <form onSubmit="onSubmit">
+
+      <view class="form-row">
+        <view class="form-row-label">分享标题：</view>
+        <view class="form-row-content">
+          <!-- onFocus：获取焦点时触发 onBlur：失去焦点时触发 onConfirm：点击键盘上的完成时触发 onInput:输入时触发-->
+          <input name="title" class="input" placeholder="自定义分享标题" />
+        </view>
+      </view>
+
+      <view class="form-row">
+        <view class="form-row-label">分享描述：</view>
+        <view class="form-row-content">
+          <!-- onFocus：获取焦点时触发 onBlur：失去焦点时触发 onConfirm：点击键盘上的完成时触发 onInput:输入时触发-->
+          <input name="desc" class="input" placeholder="自定义分享描述" />
+        </view>
+      </view>
+      
+      <view style="text-align:center;"><button type="primary" size="mini" formType="submit">设置分享信息</button></view>
+    </view>
+  </form>
+</view>

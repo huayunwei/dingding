@@ -22,3 +22,45 @@
     <view onTap="getPhoneInfo">获取手机信息</button>
   </view>
 </view>
+
+<view class="page">
+  <view class="page-description">网络状态</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <view>网络是否可用：{{networkEnable}}</view>
+      <view>网络类型：{{networkType}}</view>
+    </view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="getNetWork">获取网络信息</button>
+  </view>
+</view>
+
+<view class="page">
+  <view class="page-description">剪切板</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <view>数据：{{clipText}}</view>
+    </view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="getClip">获取剪切板数据</button>
+  </view>
+</view>
+<view class="page">
+  <view class="page-section">
+    <view class="page-section-demo">
+      <input placeholder="Input" onInput="changeInput"/>
+    </view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="setClip">设置剪切板数据</button>
+  </view>
+</view>
+
+<view class="page">
+  <view class="page-description">震动</view>
+  <view class="page-section-btns">
+    <view onTap="shake">点击我进行振动</button>
+  </view>
+</view>

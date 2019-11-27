@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/api/demo/people/index",
+    "pages/api/demo/share/index",
     "pages/api/demo/systemInfo/index",
     "pages/api/demo/location/index",
     "pages/api/demo/interaction/index",

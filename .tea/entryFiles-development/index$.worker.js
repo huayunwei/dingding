@@ -19,11 +19,20 @@ self.$global = AFAppX.$global;
 self.requirePlugin = AFAppX.requirePlugin;
         
 
+if(AFAppX.registerApp) {
+  AFAppX.registerApp({
+    appJSON: appXAppJson,
+  });
+}
+
+
 
 function success() {
 require('../../app');
 require('../../node_modules/mini-antui/es/list/index?hash=05d2a9730dd6009bf9446182f9c985f40f8c0f43');
 require('../../node_modules/mini-antui/es/list/list-item/index?hash=05d2a9730dd6009bf9446182f9c985f40f8c0f43');
+require('../../pages/api/demo/people/index?hash=5158fa18297db3fbaac119609b168d20fcdf1eea');
+require('../../pages/api/demo/share/index?hash=5158fa18297db3fbaac119609b168d20fcdf1eea');
 require('../../pages/api/demo/systemInfo/index?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 require('../../pages/api/demo/location/index?hash=5158fa18297db3fbaac119609b168d20fcdf1eea');
 require('../../pages/api/demo/interaction/index?hash=5158fa18297db3fbaac119609b168d20fcdf1eea');

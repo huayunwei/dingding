@@ -1,10 +1,56 @@
 Page({
   data:{
-    systemInfo:{}
+    systemInfo:{},
+    networkEnable:"",
+    networkType:"",
+    clipText:"",
+    tempClip:""
   },
   getPhoneInfo(){
     this.setData({
       systemInfo:dd.getSystemInfoSync()
+    })
+  },
+  getNetWork(){
+    dd.getNetworkType({
+      success:(res)=>{
+        this.setData({
+          networkEnable:res.networkAvailable,
+          networkType:res.networkType
+        })
+      }
+    })
+  },
+  getClip(){
+    dd.getClipboard({
+      success:({text})=>{
+        this.setData({
+          clipText:text
+        })
+      }
+    })
+  },
+  setClip(){
+    dd.setClipboard({
+      text:this.data.tempClip,// 剪切板数据
+      success:()=>{
+        dd.alert({
+          context:"设置成功"
+        })
+      }
+    })
+  },
+  changeInput(ev){
+    const value = ev.detail.value;
+    this.setData({
+      tempClip:value
+    })
+  },
+  shake(){
+    dd.vibrate({
+      success:()=>{
+        console.log("开始振动")
+      }
     })
   }
 })
