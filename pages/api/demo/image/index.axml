@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="page-description">图片选取和预览</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <image mode="scaleToFill" src="{{imgurl}}" onTap="previewImage"/>
+    </view>
+    <view class="page-section-btns">
+      <view onTap="selectImage">选择图片（默认显示第一个图片）</view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">图片源</view>
+      <view class="page-section-demo">
+        <radio-group name="radio-group" onChange="sourceChange">
+          <!-- 包含在label中的文本，在点击时会等同于点击radio本身 -->
+          <!-- 目前打开相册就会默认有打开相机，暂时钉钉功能不支持独立 -->
+          <label style="padding-right:20rpx;"><radio value="album" checked="{{source.length === 1 && source[0] === 'album' ? true : false}}"/>相册</label>
+          <label style="padding-right:20rpx;"><radio value="camera" checked="{{source.length === 1 && source[0] === 'camera' ? true : false}}"/>拍照</label>
+          <label style="padding-right:20rpx;"><radio value="all" checked="{{source.length === 2 ? true : false}}"/>相册和拍照</label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">图片数量</view>
+      <view class="page-section-demo">
+        <slider min="1" value="1" max="10" step="1" show-value onChange="countChange"/>
+      </view>
+    </view>
+  </view>

@@ -1,1 +1,136 @@
-<view></view>
+<view class="page">
+  <view class="page-description">表单</view>
+  <!-- onSubmit： -->
+  <form onSubmit="onSubmit" onReset="onReset">
+    <view class="page-section">
+      <view class="page-section-title">滑动选择器</view>
+      <view class="page-section-demo">
+        <!-- show-value：显示当前值 -->
+        <slider value="80" name="slider" show-value />
+        <!-- min：最小值  max：最大值 step：步长 -->
+        <slider min="10" max="30" step="10" name="slider1" show-value />
+        <!-- activeColor：已选择的颜色 backgroundColor：背景颜色 trackSize：轨道的高度-数字，默认4 handleSize：滑块的大小-数字，默认22-->
+        <slider name="slider2" activeColor="red" backgroundColor="blue" trackSize="10" handleSize="10" handleColor="#000" show-value />
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="form-row">
+        <view class="form-row-label">Switch</view>
+        <view class="form-row-content" style="text-align: right">
+          <switch name="switch" />
+        </view>
+      </view>
+      <view class="form-line" />
+      <view class="form-row">
+        <view class="form-row-label">Input</view>
+        <view class="form-row-content">
+          <!-- onFocus：获取焦点时触发 onBlur：失去焦点时触发 onConfirm：点击键盘上的完成时触发 onInput:输入时触发-->
+          <input name="input" class="input" placeholder="input something" 
+                onFocus="onFocus" 
+                onConfirm="onConfirm"
+                onInput="onInput"
+                />
+        </view>
+      </view>
+      <view class="form-row">
+        <view class="form-row-label">输入的内容</view>
+        <text>{{inputData}}</text>
+      </view>
+      <!-- 输入法中回车键文本会自动变为搜索 -->
+      <view class="form-row">
+        <view class="form-row-label">搜索类型</view>
+        <view class="form-row-content">
+          <input type="search" name="search" class="input" placeholder="input something" onBlur="onBlur" />
+        </view>
+      </view>
+      <!-- 输入的内容自动变成。的隐藏形式 -->
+      <view class="form-row">
+        <view class="form-row-label">密码类型</view>
+        <view class="form-row-content">
+          <input name="password" class="input" password="{{true}}" />
+        </view>
+      </view>
+      <view class="form-row">
+        <view class="form-row-label">数字类型</view>
+        <view class="form-row-content">
+          <input name="number" class="input" type="number" />
+        </view>
+      </view>
+      <!-- 只能输入要求的长度的内容 -->
+      <view class="form-row">
+        <view class="form-row-label">长度限制</view>
+        <view class="form-row-content">
+          <input type="text" name="max" class="input" maxlength="2"/>
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Radio</view>
+      <view class="page-section-demo">
+        <radio-group name="radio-group">
+          <!-- 包含在label中的文本，在点击时会等同于点击radio本身 -->
+          <label><radio value="radio1" />radio1</label>
+          <radio value="radio2" /><text>radio2</text>
+        </radio-group>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-title">Checkbox</view>
+      <view class="page-section-demo">
+        <checkbox-group name="checkbox">
+          <label><checkbox value="checkbox1" />checkbox1</label>
+          <label><checkbox value="checkbox2" />checkbox2</label>
+        </checkbox-group>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">滚动选择器</view>
+        <view class="page-section-demo">
+          <!-- onChange:改变时触发 value：初始值-->
+          <picker-view onChange="onChange" value="{{[4,0]}}" name="pickerV">
+            <picker-view-column>
+              <view>2013</view>
+              <view>2014</view>
+              <view>2015</view>
+              <view>2016</view>
+              <view>2017</view>
+              <view>2018</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view>Spring</view>
+              <view>Summer</view>
+            </picker-view-column>
+          </picker-view>
+        </view>
+      </view>
+
+      <!-- 目前这个值在submit中获取不到 -->
+      <view class="page-section">
+        <view class="page-section-title">从底部弹起的滚动选择器</view>
+        <view class="page-section-demo">
+          <!-- value：初始值 range：可选择的字符串列表 onChange:点击确认时触发-->
+          <picker value="0" range="{{range}}" onChange="picker" name="picker">
+            <view style="font-size:30rpx;">
+              当前选择的值：{{range[pickerIndex]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+
+
+      <view class="page-section">
+      <view class="page-section-title">Textarea</view>
+      <view class="page-section-demo">
+        <!-- maxlength:最大长度，默认为140，设置为-1时不设置长度,auto-height:自动增高-->
+        <textarea placeholder="Input multiple lines" maxlength="60" auto-height="{{true}}" name="textarea"/>
+      </view>
+      <view class="page-section-btns">
+        <!-- 注：设置size之后再设置style无效 
+          formType：包括submit和reset两种类型，会触发form的onSubmit和onReset事件
+        
+        -->
+        <view><button type="ghost" size="mini" formType="reset">Reset</button></view>
+        <view><button type="primary" size="mini" formType="submit">Submit</button></view>
+      </view>
+    </view>
+  </form>
+</view>

@@ -1,1 +1,25 @@
-Page({})
+Page({
+  data:{
+    listData:[
+      {
+        title:"多媒体",
+        datas:[
+          {
+            title:"图片",
+            arrow:true,
+            page:"demo/image/index"
+          }
+        ]
+      }
+    ]
+  },
+  onItemClick(event){
+    const url = event.target.dataset.url
+    console.log(url);
+    if(url){
+      dd.navigateTo({
+        url
+      });
+    }
+  }
+})

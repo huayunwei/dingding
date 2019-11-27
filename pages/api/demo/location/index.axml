@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="page-description">地理位置</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <view>经度：{{longitude}}</view>
+      <view>纬度：{{latitude}}</view>
+      <view>精确度：{{accuracy}}</view>
+      <view>省份：{{province}}</view>
+      <view>城市：{{city}}</view>
+      <view>格式化地址：{{address}}</view>
+    </view>
+  </view>
+  <view class="page-section-btns">
+    <view onTap="getLocation">获取地理位置</button>
+  </view>
+</view>
+
+<view class="page">
+  <view class="page-description">使用内置地图</view>
+  <view class="page-section-btns">
+    <view onTap="openMap">打开内置地图</button>
+  </view>
+</view>

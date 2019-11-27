@@ -1,0 +1,13 @@
+<view class="page">
+  <view class="page-description">交互</view>
+  <view class="page-section">
+    <view class="page-section-demo">
+      <button onTap="alertT">alert：一个按钮</button>
+      <button onTap="confirmT">confirm：两个按钮</button>
+      <button onTap="toastT">showToast：{{toastType[toast]}}</button>
+      <button onTap="loadingT">showLoading</button>
+      <button onTap="sheetT">showActionSheet</button>
+    </view>
+  </view>
+</view>
+

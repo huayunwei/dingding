@@ -1,0 +1,10 @@
+Page({
+  data:{
+    systemInfo:{}
+  },
+  getPhoneInfo(){
+    this.setData({
+      systemInfo:dd.getSystemInfoSync()
+    })
+  }
+})

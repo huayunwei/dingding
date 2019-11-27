@@ -1,1 +1,39 @@
-<view></view>
+<view>
+      <list>
+      <!-- 列表头部 -->
+      <block a:for="{{listData}}">
+         <view slot="header">
+            {{item.title}}
+        </view>
+        <block a:for="{{item.datas}}">
+          <list-item
+          
+            thumb="{{item.thumb}}" 
+            arrow="{{item.arrow}}"
+            align="{{item.align}}"
+            index="{{index}}"
+            onClick="onItemClick"
+            key="items-{{index}}"
+            last="{{index === (item.length-1)}}"
+            multipleLine="{{item.multipleLine}}"
+            wrap="{{item.wrap}}"
+            data-url="{{item.page}}"
+          >
+            {{item.title}}
+            <view class="am-list-brief">{{item.brief}}</view>
+            <!-- extra：用于渲染列表项右边说明 -->
+            <view a:if="{{item.extra}}" slot="extra">
+              {{item.extra}}
+            </view>
+            <!-- prefix：用于渲染列表项左侧说明 -->
+            <view a:if="{{item.prefix}}" slot="prefix">
+              {{item.prefix}}
+            </view>
+          </list-item>
+        </block>
+      </block>
+      <!-- <view slot="footer">
+				列表尾部
+			</view> -->
+    </list>
+</view>

@@ -1,0 +1,52 @@
+Page({
+  data:{
+    longitude:"",
+    latitude:"",
+    accuracy:"",
+    province:"",
+    city:"",
+    address:""
+  },
+  getLocation(){
+    dd.getLocation({
+      type:1,//1会获取详细的城市和位置
+      success:(res)=>{
+        console.log(JSON.stringify(res));
+        this.setData({
+          longitude:res.longitude,//经度
+          latitude:res.latitude,//纬度
+          accuracy:res.accuracy,//精确度，米
+          province:res.province,//省份
+          city:res.city,//城市
+          address:res.address//格式化地址
+        })
+      },
+      fail(res){
+        console.log(JSON.stringify(res));
+        dd.alert({
+          content:"定位失败，报错id："+res.error+"报错信息："+res.errorMessage
+        })
+      }
+    })
+  },
+  openMap(){
+    const longitude = this.data.longitude;
+    const latitude = this.data.latitude;
+    if(longitude === "" || latitude==""){
+      dd.alert({
+        content:"请先获取地理位置"
+      })
+    }else{
+      dd.openLocation({
+        longitude,
+        latitude,
+        success(){
+          console.log("成功打开内置地图")
+        },
+        fail(){
+          console.log("打开内置地图失败")
+        }
+      })
+    }
+  }
+})
