@@ -23,13 +23,12 @@ Page({
       })
     }else{
       return {
-        title:title,
-        desc:desc,
+        title:"我是题目",
+        desc:"我是描述",
         // 目前只支持网络图片链接
         imageUrl:"https://img.52z.com/upload/news/image/20180621/20180621055734_59936.jpg",
         path:"/pages/index/index" //链接地址
       }
     }
-
   }
 })

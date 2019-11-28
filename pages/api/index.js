@@ -2,19 +2,49 @@ Page({
   data:{
     listData:[
       {
-        title:"多媒体",
-        datas:[
-          {
-            title:"图片",
-            arrow:true,
-            page:"demo/image/index"
-          }
-        ]
+        title:"图片",
+        arrow:true,
+        page:"demo/image/index"
+      },
+      {
+        title:"录音管理",
+        arrow:true,
+        page:"demo/record/index"
+      },
+      {
+        title:"免登陆授权码",
+        arrow:true,
+        page:"demo/auth/index"
+      },
+      {
+        title:"交互反馈",
+        arrow:true,
+        page:"demo/interaction/index"
+      },
+      {
+        title:"位置",
+        arrow:true,
+        page:"demo/location/index"
+      },
+      {
+        title:"设备信息",
+        arrow:true,
+        page:"demo/systemInfo/index"
+      },
+      {
+        title:"分享",
+        arrow:true,
+        page:"demo/share/index"
+      },
+      {
+        title:"通讯录",
+        arrow:true,
+        page:"demo/people/index"
       }
     ]
   },
   onItemClick(event){
-    const url = event.target.dataset.url
+    const url = event.target.dataset.url;
     console.log(url);
     if(url){
       dd.navigateTo({

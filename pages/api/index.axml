@@ -1,11 +1,7 @@
 <view>
       <list>
       <!-- 列表头部 -->
-      <block a:for="{{listData}}">
-         <view slot="header">
-            {{item.title}}
-        </view>
-        <block a:for="{{item.datas}}">
+        <block a:for="{{listData}}">
           <list-item
           
             thumb="{{item.thumb}}" 
@@ -31,7 +27,6 @@
             </view>
           </list-item>
         </block>
-      </block>
       <!-- <view slot="footer">
 				列表尾部
 			</view> -->

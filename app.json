@@ -1,16 +1,19 @@
 {
   "pages": [
+    
     "pages/api/demo/people/index",
+    "pages/api/index",
+
+    "pages/index/index",
+
+    "pages/api/demo/location/index",
     "pages/api/demo/share/index",
     "pages/api/demo/systemInfo/index",
-    "pages/api/demo/location/index",
     "pages/api/demo/interaction/index",
     "pages/api/demo/auth/index",
     "pages/api/demo/image/index",
     "pages/api/demo/record/index",
     
-    "pages/api/index",
-    "pages/index/index",
     "pages/native/scroll/index",
     "pages/native/swiper/index",
     "pages/native/view/index",

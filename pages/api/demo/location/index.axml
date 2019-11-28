@@ -11,13 +11,13 @@
     </view>
   </view>
   <view class="page-section-btns">
-    <view onTap="getLocation">获取地理位置</button>
+    <view onTap="getLocation">获取地理位置</view>
   </view>
 </view>
 
 <view class="page">
   <view class="page-description">使用内置地图</view>
   <view class="page-section-btns">
-    <view onTap="openMap">打开内置地图</button>
+    <view onTap="openMap">打开内置地图</view>
   </view>
 </view>
