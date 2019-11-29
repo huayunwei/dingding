@@ -1,0 +1,9 @@
+{
+  "name": "dingding demo",
+  "description": "钉钉小程序demo",
+  "keywords": "dingding",
+  "dependencies": {
+    "@antv/my-f2": "^1.1.6",
+    "mini-antui": "0.4"
+  }
+}

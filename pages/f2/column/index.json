@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "柱状图",
+  "usingComponents":{
+    "area":"/components/column/index"
+  }
+}

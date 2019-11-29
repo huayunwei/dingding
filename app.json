@@ -1,11 +1,17 @@
 {
   "pages": [
-    
-    "pages/api/demo/people/index",
-    "pages/api/index",
-
     "pages/index/index",
 
+    "pages/f2/pie/index",
+    "pages/f2/ring/index",
+    "pages/f2/column/index",
+    "pages/f2/area/index",
+    "pages/f2/line/index",
+    "pages/f2/index",
+
+
+    "pages/api/index",
+    "pages/api/demo/people/index",
     "pages/api/demo/location/index",
     "pages/api/demo/share/index",
     "pages/api/demo/systemInfo/index",
@@ -43,7 +49,7 @@
         "name": "Api demo"
       },
       {
-        "pagePath": "",
+        "pagePath": "pages/f2/index",
         "name": "f2 demo"
       }
     ]

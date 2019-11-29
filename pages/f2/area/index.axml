@@ -1,0 +1,13 @@
+<view class="page" style="padding:0">
+    <view class="page-section">
+      <view class="page-section-title">区域图</view>
+        <column
+          categories="{{categories}}"
+          series="{{series}}"
+          xAxis="{{xAxis}}"
+          yAxis="{{yAxis}}"
+          legend="{{legend}}"
+          coord="{{coord}}"
+        />
+  </view>
+</view>

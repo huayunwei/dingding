@@ -1,0 +1,17 @@
+<view class="page" style="padding:0">
+    <view class="page-section">
+      <view class="page-section-title">饼状图</view>
+      <view style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        <pie
+          radius="{{radius}}"
+          innerRadius="{{innerRadius}}"
+          series="{{series}}"
+          legend="{{legend}}"
+          cascade="{{cascade}}"
+          pieLabel="{{pieLabel}}"
+          tooltip="{{tooltip}}"
+          style="{{style}}"
+        />
+      </view>
+  </view>
+</view>

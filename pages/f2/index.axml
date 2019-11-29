@@ -1,0 +1,20 @@
+<view>
+  <scroll-view style="height:100vh;" scroll-y onScrollToLower="onScrollToLower">
+    <list>
+      <view slot="header">
+        antv f2
+      </view>
+      <block a:for="{{listData}}">
+        <list-item
+          arrow="{{item.arrow}}"
+          index="{{index}}"
+          onClick="onClick"
+          key="items-{{index}}"
+          last="{{index === (item.length-1)}}"
+        >
+          {{item.title}}
+        </list-item>
+      </block>
+    </list>
+  </scroll-view>
+</view>
