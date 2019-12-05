@@ -1,0 +1,27 @@
+<steps 
+  activeIndex="{{activeIndex}}"
+  items="{{items}}" 
+  direction="{{direction}}"
+  size="{{size}}"
+  failIndex="{{failIndex}}"
+>
+  
+</steps>
+
+<view a:if="{{activeIndex === 1}}">
+  <include src="./steps1.axml" />
+</view>
+
+<view a:if="{{activeIndex === 2}}">
+  <include src="./steps2.axml" />
+</view>
+
+<view a:if="{{activeIndex === 3}}">
+  <include src="./steps3.axml" />
+</view>
+
+<view>
+  <button size="default" type="primary" onTap="changeDir">改变方向</button>
+  <button size="default" type="primary" onTap="prev">上一步</button>
+  <button size="default" type="primary" onTap="next">下一步</button>
+</view>

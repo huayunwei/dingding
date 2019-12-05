@@ -1,0 +1,82 @@
+<view>
+  <scroll-view style="height: 100vh;" scroll-y onScrollToLower="onScrollToLower">
+    <list>
+      <view slot="header">列表头部</view>
+      <!-- 
+        thumb：缩略图，图片地址
+        arrow：是否带箭头，false
+        align：子元素垂直对齐，middle
+        index：列表项的唯一索引
+        onClick：点击list-item时调用此函数
+        last：是否是列表的最后一项，false
+        disabled：不可点击，且无hover状态，false
+        multipleLine：多行，false
+        wrap：是否换行，默认情况下，文字超长会被隐藏，false
+       -->
+      <list-item
+        thumb="/images/ant.png"
+        arrow="{{true}}"
+        align="middle"
+        index="0"
+        disabled="{{false}}"
+        multipleLine="{{false}}"
+        wrap="{{false}}"
+      >
+        单行列表
+      </list-item>
+      <view slot="footer">列表尾部</view>
+    </list>
+
+
+    <list>
+      <list-item>
+        单行列表
+        <view slot="extra">
+          右扩展
+        </view>
+        <view slot="prefix">
+          左扩展
+        </view>
+      </list-item>
+    </list>
+
+    <list>
+      <list-item>
+        双行列表
+        <view class="am-list-brief">描述信息</view>
+      </list-item>
+    </list>
+
+
+    <list>
+      <block a:for="{{items}}">
+      <!--am-list-sticky：定义在当前page的acss中的  -->
+        <list-item
+          className="{{item.sticky ? 'am-list-sticky' : ''}}"
+          arrow="{{item.arrow}}"
+          align="{{item.align}}"
+          index="{{index}}"
+          key="item-{{index}}"
+          wrap="{{true}}"
+          disabled="{{item.sticky}}"
+        >
+          {{item.title}}
+          <view a:if="{{item.extra}}" slot="extra">
+						{{item.extra}}
+					</view>
+        </list-item>
+      </block>
+    </list>
+
+
+    <list>
+        <view slot="header">隐藏超长的标题</view>
+        <list-item
+          wrap="{{false}}"
+          arrow="{{true}}"
+        >
+          标题文字很长很长很长很长很长很长很长很长很长很长很长很长很长很长
+        </list-item>
+    </list>
+  </scroll-view>
+</view>

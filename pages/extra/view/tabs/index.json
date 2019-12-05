@@ -1,0 +1,9 @@
+{
+  "defaultTitle":"tabs选项卡",
+  "usingComponents":{
+    "tabs":"mini-antui/es/tabs/index",
+    "tab-content": "mini-antui/es/tabs/tab-content/index",
+    "vtabs": "mini-antui/es/vtabs/index",
+    "vtab-content": "mini-antui/es/vtabs/vtab-content/index"
+  }
+}

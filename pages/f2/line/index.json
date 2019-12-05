@@ -1,6 +1,0 @@
-{
-  "defaultTitle":"折线图",
-  "usingComponents":{
-    "line":"/components/line/index"
-  }
-}

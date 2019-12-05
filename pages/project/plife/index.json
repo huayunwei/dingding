@@ -1,0 +1,6 @@
+{
+  "defaultTitle":"产品追溯",
+  "usingComponents":{
+    "input-item": "mini-antui/es/input-item/index"
+  }
+}

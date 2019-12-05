@@ -1,6 +1,0 @@
-{
-  "defaultTitle": "环",
-  "usingComponents":{
-    "pie":"/components/pie/index"
-  }
-}

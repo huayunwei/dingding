@@ -1,6 +1,0 @@
-{
-  "defaultTitle": "饼状图",
-  "usingComponents":{
-    "pie":"/components/pie/index"
-  }
-}

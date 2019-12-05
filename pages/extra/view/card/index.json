@@ -1,0 +1,6 @@
+{
+  "defaultTitle":"card",
+  "usingComponents":{
+    "card": "mini-antui/es/card/index"
+  }
+}

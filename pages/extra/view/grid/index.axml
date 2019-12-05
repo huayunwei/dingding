@@ -1,0 +1,23 @@
+<!-- 
+  list：宫格数据，array<icon,text,desc>
+  onGridItemClick：点击宫格项回调,(index:Number)=>{}
+  columnNum：每行显示几列，2,3,4,5
+  circular：是否圆角，默认false,目前没有看出什么效果
+  hasLine：是否有边框，默认true
+
+ -->
+
+<grid 
+  onGridItemClick="onItemClick" 
+  columnNum="{{3}}" 
+  list="{{list3}}" 
+  circular="{{true}}"
+/>
+
+<grid 
+  onGridItemClick="onItemClick" 
+  columnNum="{{3}}" 
+  list="{{list3}}" 
+  circular="{{true}}"
+  hasLine="{{false}}"
+/>

@@ -1,6 +1,0 @@
-{
-  "defaultTitle": "区域",
-  "usingComponents":{
-    "area":"/components/area/index"
-  }
-}

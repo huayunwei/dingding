@@ -1,0 +1,36 @@
+<view>
+<!-- 
+  thumb：card缩略图地址
+  title：card标题
+  subTitle：card副标题
+  footer：footer文字
+  footerImg：footer图片地址
+  onClick：card点击的回调，(info:object)=>{}
+  info：用于点击卡片时往外传递数据
+ -->
+  <card 
+    thumb="https://gw.alipayobjects.com/zos/rmsportal/VBqNBOiGYkCjqocXjdUj.png" 
+    title="Title" 
+    subTitle="subtitle" 
+  />
+
+  <!-- 隐藏右侧的arrow图标 -->
+  <view class="hide-arrow">
+    <card 
+      thumb="https://gw.alipayobjects.com/zos/rmsportal/VBqNBOiGYkCjqocXjdUj.png" 
+      title="Title" 
+      subTitle="subtitle" 
+    />
+  </view>
+
+
+    <card 
+    thumb="https://gw.alipayobjects.com/zos/rmsportal/VBqNBOiGYkCjqocXjdUj.png" 
+    title="Title" 
+    subTitle="subtitle" 
+    footer="footer"
+    footerImg="https://gw.alipayobjects.com/zos/rmsportal/VBqNBOiGYkCjqocXjdUj.png"
+    onClick="onCardClick"
+    info={{page:'/page/index/index'}}
+  />
+</view>

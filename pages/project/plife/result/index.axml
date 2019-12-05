@@ -1,0 +1,89 @@
+<view>
+  <view a:if="{{flag === 0}}">
+    <page-result type="empty" title="{{msg}}"/>
+  </view>
+  <view a:elif="{{flag === 1}}">
+      <view class="table">
+          <view class="tr">
+            <view class="td bg-g">查询码</view>
+            <view class="td bg-v">{{rData.code}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">产品名称</view>
+            <view class="td bg-v">{{rData.productName}}({{rData.pkgRatio}}; {{rData.packageSpec}})</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">产品批号</view>
+            <view class="td bg-v">{{rData.batchNo}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">出库日期</view>
+            <view class="td bg-v" >{{rData.orderDate}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">箱码</view>
+            <view class="td bg-v">
+              <text selectable="{{true}}">{{rData.boxCode}}</text>
+            </view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">经销商</view>
+            <view class="td bg-v">{{rData.customer}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">单据类型</view>
+            <view class="td bg-v">{{rData.orderType}}</view>
+          </view>
+
+          <view style="height:20rpx;"></view>
+          
+          <view class="tr">
+            <view class="td bg-g">批准文号</view>
+            <view class="td bg-v">{{rData.authorizedNo}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">产品id</view>
+            <view class="td bg-v">{{rData.productId}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">产品类型</view>
+            <view class="td bg-v">{{rData.codeType}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">产品状态</view>
+            <view class="td bg-v">{{rData.status}}</view>
+          </view>
+
+
+          <view style="height:20rpx;"></view>
+
+          <view class="tr">
+            <view class="td bg-g">包装规格</view>
+            <view class="td bg-v">{{rData.packageSpec}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">包装比例</view>
+            <view class="td bg-v">{{rData.pkgRatio}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">包装层级</view>
+            <view class="td bg-v">{{rData.codeLevel}}</view>
+          </view>
+
+          <view style="height:20rpx;"></view>
+
+          <view class="tr">
+            <view class="td bg-g">生产日期</view>
+            <view class="td bg-v">{{rData.produceDate}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">生产有效期</view>
+            <view class="td bg-v">{{rData.validDate}}</view>
+          </view>
+          <view class="tr">
+            <view class="td bg-g">出库单号</view>
+            <view class="td bg-v">{{rData.orderCode}}</view>
+          </view>
+      </view>
+  </view>
+</view>

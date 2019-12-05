@@ -1,0 +1,7 @@
+{
+  "defaultTitle":"list 列表",
+  "usingComponents":{
+    "list":"mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index"
+  }
+}

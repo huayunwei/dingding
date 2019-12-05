@@ -1,0 +1,4 @@
+<view>
+<!-- 注意要使用本地的话，需要使用电脑的ip地址，不用和手机一个wifi下的ip -->
+  <web-view src="http://192.169.21.184:8080/#/line" onMessage="test" id="web-view-1"/>  
+</view>

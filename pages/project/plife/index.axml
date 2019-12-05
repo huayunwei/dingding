@@ -1,0 +1,16 @@
+<view style="padding:20rpx;">
+      <input-item
+        data-field="proId"
+        clear="{{true}}"
+        value="{{proId}}"
+        placeholder="产品编号"
+        onInput="onItemInput"
+        onClear="onClear"
+        maxlength="{{20}}"
+        type="number"
+      >
+      <view slot="extra" class="extra" onTap="onExtraTap"></view>
+    </input-item>
+    <button size="default" type="primary" onTap="onSubmit">查询</button>
+</view>
+

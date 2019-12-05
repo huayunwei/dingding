@@ -1,0 +1,6 @@
+{
+  "defaultTitle":"steps 步骤条",
+  "usingComponents":{
+    "steps":"mini-antui/es/steps/index"
+  }
+}

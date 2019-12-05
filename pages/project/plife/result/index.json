@@ -1,0 +1,6 @@
+{
+  "defaultTitle":"结果页",
+  "usingComponents":{
+    "page-result": "mini-antui/es/page-result/index"
+  }
+}

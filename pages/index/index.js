@@ -67,31 +67,38 @@ Page({
     extraComponents:[
       {
         title:"布局导航",
-        arrow:true
+        arrow:true,
+        page:"/pages/extra/view/index"
       },
       {
         title:"操作浮层",
-        arrow:true
+        arrow:true,
+        page:"/pages/extra/float/index"
       },
       {
         title:"结果类",
-        arrow:true
+        arrow:true,
+        page:"/pages/extra/result/index"
       },
       {
         title:"提示引导",
-        arrow:true
+        arrow:true,
+        page:"/pages/extra/hint/index"
       },
       {
         title:"表单类",
-        arrow:true
+        arrow:true,
+        page:"/pages/extra/form/index"
       },
       {
         title:"手势类",
-        arrow:true
+        arrow:true,
+        page:"/pages/extra/swipe/index"
       },
       {
         title:"其他",
-        arrow:true
+        arrow:true,
+        page:"/pages/extra/other/index"
       }
     ],
   },

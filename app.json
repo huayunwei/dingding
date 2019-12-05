@@ -1,14 +1,24 @@
 {
   "pages": [
+    "pages/extra/view/footer/index",
+    "pages/extra/view/flex/index",
+    "pages/extra/view/pagination/index",
+    "pages/extra/view/collapse/index",
+    "pages/extra/view/index",
+    "pages/extra/view/tabs/index",
+    "pages/extra/view/list/index",
+    "pages/extra/view/grid/index",
+    "pages/extra/view/card/index",
+    "pages/extra/view/steps/index",
+
+    "pages/project/plife/index",
+    "pages/project/plife/result/index",
+
     "pages/index/index",
+    
 
-    "pages/f2/pie/index",
-    "pages/f2/ring/index",
-    "pages/f2/column/index",
-    "pages/f2/area/index",
-    "pages/f2/line/index",
-    "pages/f2/index",
-
+    "pages/chart/index",
+    "pages/chart/line/index",
 
     "pages/api/index",
     "pages/api/demo/people/index",
@@ -49,8 +59,12 @@
         "name": "Api demo"
       },
       {
-        "pagePath": "pages/f2/index",
-        "name": "f2 demo"
+        "pagePath": "pages/chart/index",
+        "name": "图标 demo"
+      },
+      {
+        "pagePath":"pages/project/index",
+        "name":"项目 demo"
       }
     ]
   }
