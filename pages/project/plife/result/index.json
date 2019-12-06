@@ -1,6 +1,8 @@
 {
-  "defaultTitle":"结果页",
+  "defaultTitle":"追溯详情",
   "usingComponents":{
-    "page-result": "mini-antui/es/page-result/index"
+    "page-result": "mini-antui/es/page-result/index",
+    "flex": "mini-antui/es/flex/index",
+    "flex-item": "mini-antui/es/flex/flex-item/index"
   }
 }

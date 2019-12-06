@@ -1,0 +1,3 @@
+<view>
+  <footer copyright="{{copyright}}" links="{{links}}"></footer>
+</view>

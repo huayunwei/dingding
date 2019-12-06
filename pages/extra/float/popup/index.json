@@ -1,0 +1,6 @@
+{
+  "defaultTitle":"弹出菜单",
+  "usingComponents": {
+    "popup": "mini-antui/es/popup/index"
+  }
+}

@@ -1,7 +1,6 @@
 {
   "defaultTiltle":"布局导航",
   "usingComponents":{
-    "list":"mini-antui/es/list/index",
-    "list-item": "mini-antui/es/list/list-item/index"
+    "footer": "mini-antui/es/footer/index"
   }
 }

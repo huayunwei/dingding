@@ -1,0 +1,30 @@
+<view>
+<!-- 目前这个组件有问题：
+
+  1. 非手风琴模式，activeKey为item-11的时候，item-11无法打开，只有最后一个才可打开
+  2. 手风琴模式，不管activeKey设置的什么，都是最后一个默认打开
+ -->
+  <collapse
+    className="demo-collapse"
+    collapseKey="collapse1"
+    activeKey="{{['item-11']}}"
+    onChange="onChange"
+    accordion="{{true}}"
+  >
+    <collapse-item header="标题1" itemKey="item-11" collapseKey="collapse1">
+      <view class="item-content content1">
+        <view style="height:100px">内容区域</view>
+      </view>                
+    </collapse-item>
+    <collapse-item header="标题2" itemKey="item-12" collapseKey="collapse1">
+      <view class="item-content content2">
+        <view>内容区域</view>
+      </view>
+    </collapse-item>
+    <collapse-item header="标题3" itemKey="item-13" collapseKey="collapse1">
+      <view class="item-content content3">
+        <view>内容区域</view>         
+      </view>
+    </collapse-item>
+  </collapse>
+</view>

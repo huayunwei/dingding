@@ -1,1 +1,22 @@
-Page({})
+Page({
+  data:{
+   items:[
+     {
+       title:"气泡",
+       page:"/pages/extra/float/popover"
+     },
+     {
+       title:"筛选",
+       page:"/pages/extra/float/filter"
+     },
+     {
+       title:"对话框",
+       page:"/pages/extra/float/modal"
+     },
+     {
+       title:"弹出菜单",
+       page:"/pages/extra/float/popup"
+     }
+   ] 
+  }
+})

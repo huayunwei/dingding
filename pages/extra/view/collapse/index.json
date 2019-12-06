@@ -1,7 +1,7 @@
 {
-  "defaultTiltle":"布局导航",
+  "defaultTitle":"折叠面板",
   "usingComponents":{
-    "list":"mini-antui/es/list/index",
-    "list-item": "mini-antui/es/list/list-item/index"
+    "collapse": "mini-antui/es/collapse/index",
+    "collapse-item": "mini-antui/es/collapse/collapse-item/index"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "defaultTitle":"对话框",
+  "usingComponents": {
+    "modal": "mini-antui/es/modal/index"
+  }
+}

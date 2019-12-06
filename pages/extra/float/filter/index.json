@@ -1,0 +1,7 @@
+{
+  "defaultTitle":"筛选",
+  "usingComponents": {
+    "filter": "mini-antui/es/filter/index",
+    "filter-item": "mini-antui/es/filter/filter-item/index"
+  }
+}

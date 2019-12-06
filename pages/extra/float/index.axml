@@ -1,0 +1,16 @@
+<view>
+  <list>
+    <block a:for="{{items}}">
+      <list-item
+        arrow="{{item.arrow}}"
+        align="{{item.align}}"
+        index="{{index}}"
+        onClick="onNativeClick"
+        key="items-{{index}}"
+        last="{{index === (item.length-1)}}"
+      >
+        <navigator url="{{item.page}}">{{item.title}}</navigator>
+      </list-item>
+    </block>
+  </list>
+</view>

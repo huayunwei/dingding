@@ -1,7 +1,6 @@
 {
-  "defaultTiltle":"布局导航",
+  "defaultTitle":"分页",
   "usingComponents":{
-    "list":"mini-antui/es/list/index",
-    "list-item": "mini-antui/es/list/list-item/index"
+    "pagination": "mini-antui/es/pagination/index"
   }
 }

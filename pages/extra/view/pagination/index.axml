@@ -1,0 +1,22 @@
+<view>
+<!-- 
+  mode:按钮的形态可选类型 - text，icon 
+  total：总页数
+  current：当前页数
+  simple：是否隐藏数值
+  disabled：禁用状态
+  prevText：前翻分页按钮文案
+  nextText：后翻分页按钮文案
+  onChange：翻页回调函数
+-->
+  <view >基础用法</view>
+  <pagination total="{{20}}" current="{{1}}"/>
+  <view >箭头按钮</view>
+  <pagination mode="icon" total="{{20}}" current="{{10}}"/>
+  <view >简单模式</view>
+  <pagination simple total="{{20}}" current="{{1}}"/>
+  <view >按钮禁用</view>
+  <pagination total="{{20}}" current="{{1}}" disabled/>
+  <view >自定义按钮文案</view>
+  <pagination prevText="上一篇" nextText="下一篇" total="{{20}}" current="{{1}}"/>
+</view>

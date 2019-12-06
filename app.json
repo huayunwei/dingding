@@ -1,9 +1,16 @@
 {
   "pages": [
+    
+    "pages/extra/float/popover/index",
+    "pages/extra/float/filter/index",
+    "pages/extra/float/modal/index",
+    "pages/extra/float/popup/index",
+    "pages/extra/float/index",
+
+    "pages/extra/view/collapse/index",
+    "pages/extra/view/pagination/index",
     "pages/extra/view/footer/index",
     "pages/extra/view/flex/index",
-    "pages/extra/view/pagination/index",
-    "pages/extra/view/collapse/index",
     "pages/extra/view/index",
     "pages/extra/view/tabs/index",
     "pages/extra/view/list/index",
