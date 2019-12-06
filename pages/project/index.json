@@ -1,7 +1,0 @@
-{
-  "defaultTiltle":"项目demo",
-  "usingComponents":{
-    "list":"mini-antui/es/list/index",
-    "list-item": "mini-antui/es/list/list-item/index"
-  }
-}
